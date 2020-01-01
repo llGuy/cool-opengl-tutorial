@@ -56,23 +56,7 @@ Next, the fragment shader gets run for every pixel and colors them in (in the wa
 
 ## Translation to code
 
-Here's how this translates to OpenGL code (I expect that you initialized the OpenGL context either with GLFW/GLEW or Win32, or other APIs).
-
-First of all, the way a typical graphics program is setup, is with some sort of initialization function (which creates all the shaders, loads models, etc...), then the update function (which will run every frame until the game is over, and update the game and render to the screen). We will call these two functions accordingly:
-
-```c
-void initialize_game()
-{
-	// Initialization
-}
-
-void update()
-{
-	// Update and render
-}
-```
-
-Right now, we are taking care of the initialization function.
+Here's how this translates to OpenGL code (we will get to initializing context / window later - this is just to understand the concepts of pure OpenGL).
 
 ### Initialization
 
@@ -119,12 +103,9 @@ glDetachShader(gpu_program, vsh);
 glDetachShader(gpu_program, fsh);
 ```
 
-### Update function
-In the `update()` function, we need to render (draw) our triangle.
+### Rendering
 
-The first thing that needs to happen when rendering is to clear the buffer of memory with the color values of the pixels of our window with `glClear(GL_COLOR_BUFFER_BIT)` - with GL_COLOR_BUFFER_BIT, we are telling OpenGL to specifically clear the color values of the screen (there will be others we will get to later like GL_DEPTH_BUFFER_BIT). The reason for why we would want to do this is so that we can render on a "blank canvas" so to speak - so that we are not rendering on an already drawn image.
-
-Now we want to render the triangle.
+Now, to render the triangle.
 
 To do this, we have to run the GPU program we created, which will kick off the vertex shader loop created by OpenGL, mentioned earlier, which runs the vertex shader for however many vertices we want, and will then execute the rest of the GPU program.
 
