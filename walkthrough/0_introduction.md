@@ -1,6 +1,6 @@
 # Introduction to OpenGL
 
-![photo](/walkthrough/0_introduction/images/opengl_logo.PNG)
+![photo](/walkthrough/0_introduction/images/opengl_logo.png)
 
 Hello!
 
@@ -14,7 +14,7 @@ The great thing about the GPU for graphics (and  therefore making games), is tha
 
 To render (draw) a shape to the screen, we usually use triangles as this allows us to create a huge number of shapes (square, pentagon, any 3D model...)
 
-![photo](/walkthrough/0_introduction/images/sphere.PNG)
+![photo](/walkthrough/0_introduction/images/sphere.png)
 
 The way triangles are sent to the GPU, is through a *graphics pipeline*. In OpenGL, this is called a *GPU program*.
 
@@ -206,7 +206,7 @@ void main()
 
 Now, how does the coordinate system of OpenGL work:
 
-![photo](/walkthrough/0_introduction/images/opengl_coordinates.PNG)
+![photo](/walkthrough/0_introduction/images/opengl_coordinates.png)
 
 No matter the window resolution, the x axis goes from -1 to +1 and the y axis goes also from -1 to +1.
 
