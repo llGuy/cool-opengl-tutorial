@@ -1,6 +1,6 @@
 # Introduction to OpenGL
 
-![photo](/0_introduction/images/opengl_logo.PNG)
+![photo](/walkthrough/0_introduction/images/opengl_logo.PNG)
 
 Hello!
 
@@ -14,7 +14,7 @@ The great thing about the GPU for graphics (and  therefore making games), is tha
 
 To render (draw) a shape to the screen, we usually use triangles as this allows us to create a huge number of shapes (square, pentagon, any 3D model...)
 
-![photo](/0_introduction/images/sphere.PNG)
+![photo](/walkthrough/0_introduction/images/sphere.PNG)
 
 The way triangles are sent to the GPU, is through a *graphics pipeline*. In OpenGL, this is called a *GPU program*.
 
@@ -44,11 +44,11 @@ Now, OpenGL runs the fragment shader for every pixel inside the shape and sets t
 
 Here's an example:
 
-![photo](/0_introduction/images/vertex_shader_visualisation.PNG)
+![photo](/walkthrough/0_introduction/images/vertex_shader_visualisation.PNG)
 
 Here, we tell OpenGL to run the vertex shader 3 times, and plot the 3 points for the triangle that will be drawn accordingly.
 
-![photo](/0_introduction/images/fragment_shader_visualisation.PNG)
+![photo](/walkthrough/0_introduction/images/fragment_shader_visualisation.PNG)
 
 Next, the fragment shader gets run for every pixel and colors them in (in the way that the fragment shader was programmed to do).
 
@@ -166,11 +166,11 @@ The primitive parameter of `glDrawArrays()` basically just tells the GPU, how to
 
 For example, `GL_TRIANGLES` will tell the GPU to call the fragment shader for all the pixels delimited by the vertices specified by the vertex shader. Here is what it looks like:
 
-![photo](/0_introduction/images/gl_triangles.PNG)
+![photo](/walkthrough/0_introduction/images/gl_triangles.PNG)
 
 Another example: `GL_LINE_LOOP` tells the GPU to call the fragment shader only the lines connecting the vertices. Here is what it looks like:
 
-![photo](/0_introduction/images/gl_line_loop.PNG)
+![photo](/walkthrough/0_introduction/images/gl_line_loop.PNG)
 
 After rendering is finished, you need to swap buffers (with GLFW, it's `glfwSwapBuffers()`).
 
@@ -206,7 +206,7 @@ void main()
 
 Now, how does the coordinate system of OpenGL work:
 
-![photo](/0_introduction/images/opengl_coordinates.PNG)
+![photo](/walkthrough/0_introduction/images/opengl_coordinates.PNG)
 
 No matter the window resolution, the x axis goes from -1 to +1 and the y axis goes also from -1 to +1.
 
@@ -256,5 +256,5 @@ Here, there is no `in` variable. This is because, the fragment shader here does 
 
 And voila! working triangle.
 
-![photo](/0_introduction/images/gl_triangles.PNG)
+![photo](/walkthrough/0_introduction/images/gl_triangles.PNG)
 
