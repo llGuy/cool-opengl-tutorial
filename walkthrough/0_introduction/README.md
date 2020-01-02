@@ -6,6 +6,8 @@ Hello!
 
 I wanted to make this cool and simple little OpenGL tutorial to possible demystify this API through a simple walkthrough on how to draw a triangle and then so on...
 
+> NOTE: This is just to explain the main concepts with some code. In the next, we will put it all together into an application
+
 ## Introduction to the GPU 
 
 OpenGL is a 3D graphics API, allowing the programmer to interface with graphics hardware (such as the GPU).
