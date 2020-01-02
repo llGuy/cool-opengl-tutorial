@@ -4,9 +4,9 @@
 
 Hello!
 
-I wanted to make this cool and simple little OpenGL tutorial to possible demystify this API through a simple walkthrough on how to draw a triangle and then so on...
+I wanted to make this cool and simple little OpenGL tutorial to possibly demystify this API through a simple walkthrough on how to draw a triangle and then other things...
 
-> NOTE: This is just to explain the main concepts with some code. In the next, we will put it all together into an application
+> NOTE: This is just to explain the main concepts with some code. In the next article, we will put it all together into an application
 
 ## Introduction to the GPU 
 
